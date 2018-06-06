@@ -1,8 +1,8 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/rrrdong/applied-project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Abstract: 
+With the innovation of high technology, everything has been challenged in our daily life. AlphaGo beat the No. 1 WeiQi player shocked the whole world and everyone are curious about what could be happing tomorrow. There is no difference in fashion industry. Google presented a data-driven dress concept that will use a data set to design the best dress for the owner. It will shake the most traditional retail industry and the clothing manufacture industry. In this paper, fashion supply chain management will be studied since it is the foundation of clothing retail and a more in-depth analysis on the insider look of the fast fashion industry. Fast fashion become the biggest driven of the growth in fashion industry in the past decade. Also, the proposed research topic on trending technology in fashion supply chain management will be discussed in detail in the second half of this paper. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
