@@ -11,6 +11,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
+```{r}
 library(HistData)
 library(plotly)
 library(vcd)
@@ -31,6 +32,8 @@ plot_ly(Arbuthnot, x = ~Year, y = ~Ratio, name = 'Ratio: Male vs. Female',type =
 add_trace(y = ~maxR, name = 'Maximum', mode = 'lines',line = list(color = 'red', width = 2)) %>%
 add_trace(y = ~meanR, name = 'Mean', mode = 'lines',line = list(color = 'green', width = 2)) %>%
 add_trace(y = ~minR, name = 'Minimum', mode = 'lines',line = list(color = 'blue', width = 2))
+```
+
 
 - Bulleted
 - List
