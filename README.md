@@ -11,16 +11,26 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-Abstract: 
-# With the innovation of high technology, everything has been challenged in our daily life. 
-# AlphaGo beat the No. 1 WeiQi player shocked the whole world and everyone are curious about what could be happing tomorrow. 
-# There is no difference in fashion industry. 
-# Google presented a data-driven dress concept that will use a data set to design the best dress for the owner. 
-# It will shake the most traditional retail industry and the clothing manufacture industry. 
-# In this paper, fashion supply chain management will be studied since it is the foundation of clothing retail and a more in-depth analysis on the insider look of the fast fashion industry. 
-# Fast fashion become the biggest driven of the growth in fashion industry in the past decade. 
-# Also, the proposed research topic on trending technology in fashion supply chain management will be discussed in detail in the second half of this paper
+library(HistData)
+library(plotly)
+library(vcd)
+library(magrittr)
+data("Arbuthnot")
+str(Arbuthnot)
+maxR <- max(Arbuthnot$Ratio)
 
+meanR <- mean(Arbuthnot$Ratio)
+
+minR <- min(Arbuthnot$Ratio)
+
+MR <- max(Arbuthnot$Ratio) + 0.1
+
+IR <- min(Arbuthnot$Ratio) - 0.1
+
+plot_ly(Arbuthnot, x = ~Year, y = ~Ratio, name = 'Ratio: Male vs. Female',type = 'scatter', mode = 'lines',line = list(color = 'black', width = 2))%>%
+add_trace(y = ~maxR, name = 'Maximum', mode = 'lines',line = list(color = 'red', width = 2)) %>%
+add_trace(y = ~meanR, name = 'Mean', mode = 'lines',line = list(color = 'green', width = 2)) %>%
+add_trace(y = ~minR, name = 'Minimum', mode = 'lines',line = list(color = 'blue', width = 2))
 
 - Bulleted
 - List
